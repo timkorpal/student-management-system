@@ -1,0 +1,30 @@
+# Environment variables / secrets
+.env
+*.env
+BackEnd/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Node / React
+node_modules/
+FrontEnd/node_modules/
+dist/
+FrontEnd/dist/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

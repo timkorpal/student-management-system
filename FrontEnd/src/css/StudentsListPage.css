@@ -1,0 +1,73 @@
+/* Main container */
+.students-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+/* Shared grid layout for headers and student records */
+.student-header,
+.student-info {
+    display: grid;
+
+    grid-template-columns:
+        125px
+        100px
+        90px
+        130px
+        130px
+        260px
+        150px
+        180px
+        150px
+        150px
+        150px;
+
+    gap: 15px;
+    align-items: center;
+
+    min-width: max-content;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.student-header {
+    background-color: #252932;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid #555;
+}
+
+/* Student records */
+.student-info {
+    border-bottom: 1px solid #444;
+    color: #c0c6d0;
+}
+
+/* Alternate row backgrounds */
+.student-info:nth-child(odd) {
+    background-color: #20232b;
+}
+
+/* Hover effect */
+.student-info:hover {
+    background-color: #303641;
+}
+
+/* Individual cells */
+.student-info p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-inactive {
+    color: red;
+    font-weight: bold;
+} 
